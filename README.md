@@ -38,7 +38,7 @@
 | Layer        | Technology                                                      |
 | ------------ | --------------------------------------------------------------- |
 | **Runtime**  | OpenWrt (LuCI)                                                  |
-| **Backend**  | `rpcd` ACL, `uci-defaults`, CGI binary `hilink_api`             |
+| **Backend**  | `rpcd` ACL, CGI binary `hilink_api`                             |
 | **Language** | JavaScript (LuCI AMD views + polling `require poll`)            |
 | **Theme**    | Inline CSS + dark mode (`body.dark`)                            |
 | **Build**    | `bash` + `tar` (ipk) + `apk-tools v3` (apk) &mdash; no SDK      |
@@ -56,6 +56,8 @@ BITS-HiLink/
 │       └── release.yml            # semantic-release + build .ipk/.apk + attach asset
 ├── luci-app-bitshilink/
 │   ├── htdocs/
+│   │   ├── cgi-bin/
+│   │   │   └── hilink_api -> /usr/bin/hilink_api   # CGI handler
 │   │   └── luci-static/resources/
 │   │       ├── icons/hilink-*.png
 │   │       └── view/bitshilink/
@@ -64,8 +66,7 @@ BITS-HiLink/
 │   │           └── config.js      # ip/user/pass form
 │   └── root/
 │       ├── etc/
-│       │   ├── config/hilink
-│       │   └── uci-defaults/99-bitshilink   # symlink /www/cgi-bin/hilink_api
+│       │   └── config/hilink
 │       └── usr/
 │           ├── bin/hilink_api              # precompiled CGI (static ARM aarch64)
 │           └── share/
