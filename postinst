@@ -1,0 +1,11 @@
+#!/bin/sh
+# postinst luci-app-bishilink
+# Reload LuCI ACL/menu.
+
+[ -z "$IPKG_INSTROOT" ] && {
+	/etc/init.d/rpcd restart >/dev/null 2>&1
+	rm -rf /tmp/luci-indexcache /tmp/luci-* /tmp/.uci
+	[ -x /usr/bin/hilink_api ] || chmod +x /usr/bin/hilink_api
+}
+
+exit 0

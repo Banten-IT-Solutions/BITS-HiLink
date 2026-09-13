@@ -1,0 +1,37 @@
+{
+	"admin/services/bishilink": {
+		"title": "BITS HiLink",
+		"order": 95,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [ "luci-app-bishilink" ],
+			"uci": { "hilink": true }
+		}
+	},
+	"admin/services/bishilink/details": {
+		"title": "Details",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "bishilink/details"
+		}
+	},
+	"admin/services/bishilink/message": {
+		"title": "Messages",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "bishilink/message"
+		}
+	},
+	"admin/services/bishilink/config": {
+		"title": "Configuration",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "bishilink/config"
+		}
+	}
+}

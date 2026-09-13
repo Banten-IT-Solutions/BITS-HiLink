@@ -1,0 +1,8 @@
+Package: luci-app-bishilink
+Version: 1.0.0
+Depends: libc, luci-base, rpcd
+Section: luci
+Architecture: all
+Maintainer: Banten IT Solutions <support@bits.co.id>
+License: GPL-2.0
+Description: LuCI support for BITS HiLink modem

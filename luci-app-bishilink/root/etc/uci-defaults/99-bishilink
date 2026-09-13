@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -eu
+
+CGI_DIR="/www/cgi-bin"
+BIN="/usr/bin/hilink_api"
+LINK="$CGI_DIR/hilink_api"
+
+log() { echo "[$(date +%H:%M:%S)] $*"; }
+
+mkdir -p "$CGI_DIR"
+
+rm -f "$LINK"
+
+if [ -e "$BIN" ]; then
+	chmod +x "$BIN"
+	ln -s "$BIN" "$LINK"
+	log "Link  : $LINK -> $BIN"
+else
+	log "ERROR: $BIN not found"
+	exit 1
+fi
+
+rm -f /tmp/luci-indexcache
+exit 0
