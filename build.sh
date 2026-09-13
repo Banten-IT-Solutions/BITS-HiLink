@@ -17,7 +17,9 @@ OUT_APK="dist/${PKG_NAME}_${PKG_VER}_all.apk"
 rm -rf .build dist
 mkdir -p .build/root .build/control .build/outer dist
 
-cp -a luci-app-bitshilink/root/. .build/root/
+# htdocs -> /www ; root -> /
+cp -a luci-app-bitshilink/htdocs/. .build/root/www/
+cp -a luci-app-bitshilink/root/.   .build/root/
 
 # ===== .ipk (opkg) =====
 cp control .build/control/control

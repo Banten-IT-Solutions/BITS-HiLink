@@ -55,21 +55,22 @@ BITS-HiLink/
 │   └── workflows/
 │       └── release.yml            # semantic-release + build .ipk/.apk + attach asset
 ├── luci-app-bitshilink/
+│   ├── htdocs/
+│   │   └── luci-static/resources/
+│   │       ├── icons/hilink-*.png
+│   │       └── view/bitshilink/
+│   │           ├── details.js     # modem dashboard + signal metrics
+│   │           ├── message.js     # SMS inbox
+│   │           └── config.js      # ip/user/pass form
 │   └── root/
 │       ├── etc/
 │       │   ├── config/hilink
 │       │   └── uci-defaults/99-bitshilink   # symlink /www/cgi-bin/hilink_api
-│       ├── usr/
-│       │   ├── bin/hilink_api              # precompiled CGI (static ARM aarch64)
-│       │   └── share/
-│       │       ├── luci/menu.d/luci-app-bitshilink.json
-│       │       └── rpcd/acl.d/luci-app-bitshilink.json
-│       └── www/luci-static/resources/
-│           ├── icons/hilink-*.png
-│           └── view/bitshilink/
-│               ├── details.js     # modem dashboard + signal metrics
-│               ├── message.js     # SMS inbox
-│               └── config.js      # ip/user/pass form
+│       └── usr/
+│           ├── bin/hilink_api              # precompiled CGI (static ARM aarch64)
+│           └── share/
+│               ├── luci/menu.d/luci-app-bitshilink.json
+│               └── rpcd/acl.d/luci-app-bitshilink.json
 ├── scripts/
 │   └── prepare.js                 # sync version + build .ipk/.apk (semantic-release)
 ├── build.sh                       # SDK-less .ipk + .apk packer (bash + tar + apk-tools)
