@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Banten-IT-Solutions/BITS-HiLink/compare/v1.1.0...v1.2.0) (2026-09-13)
+
+
+### Features
+
+* add page titles, remove Powered By footer ([f0b4ea6](https://github.com/Banten-IT-Solutions/BITS-HiLink/commit/f0b4ea65cfe50681b0aa8534ff833736884da194))
+
 # [1.1.0](https://github.com/Banten-IT-Solutions/BITS-HiLink/compare/v1.0.2...v1.1.0) (2026-09-13)
 
 
