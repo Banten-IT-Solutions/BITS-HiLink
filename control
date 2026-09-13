@@ -4,5 +4,5 @@ Depends: libc, luci-base, rpcd
 Section: luci
 Architecture: all
 Maintainer: Banten IT Solutions <support@bits.co.id>
-License: GPL-2.0
+License: MIT
 Description: LuCI support for BITS HiLink modem

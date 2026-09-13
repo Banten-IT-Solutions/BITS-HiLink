@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/LuCI-3D5780?style=flat" alt="LuCI" />
     <img src="https://img.shields.io/badge/Huawei-FF0000?style=flat&logo=huawei&logoColor=white" alt="Huawei" />
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" />
-    <img src="https://img.shields.io/badge/license-GPL--2.0-green?style=flat" alt="GPL-2.0 License" />
+    <img src="https://img.shields.io/badge/license-MIT-green?style=flat" alt="MIT License" />
   </p>
 </div>
 
@@ -140,7 +140,7 @@ Push ke `main` dan workflow build `.ipk` + `.apk` (build.sh + apk-tools) lalu pu
 
 ## 📄 License
 
-Distributed under the GPL-2.0 License. See `LICENSE`.
+Distributed under the MIT License. See `LICENSE`.
 
 ---
 

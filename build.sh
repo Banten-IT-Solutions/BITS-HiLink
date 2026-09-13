@@ -45,7 +45,7 @@ if command -v "$APK_BIN" >/dev/null 2>&1; then
     --info "version:${PKG_VER}-r0"
     --info "arch:noarch"
     --info "description:${PKG_DESC}"
-    --info "license:GPL-2.0"
+    --info "license:MIT"
     --info "maintainer:Banten IT Solutions <support@bits.co.id>"
     --info "depends:${PKG_DEPENDS}"
   )
