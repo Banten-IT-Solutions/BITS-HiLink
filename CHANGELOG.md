@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Banten-IT-Solutions/BITS-HiLink/compare/v1.2.0...v1.2.1) (2026-09-13)
+
+
+### Bug Fixes
+
+* standard apk filename (name-version-r0.apk) for apk feed ([a0fb9ba](https://github.com/Banten-IT-Solutions/BITS-HiLink/commit/a0fb9ba44258153e2b989f9df1439690e347bbe6))
+
 # [1.2.0](https://github.com/Banten-IT-Solutions/BITS-HiLink/compare/v1.1.0...v1.2.0) (2026-09-13)
 
 
