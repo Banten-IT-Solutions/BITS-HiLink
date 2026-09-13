@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Banten-IT-Solutions/BITS-HiLink/compare/v1.0.2...v1.1.0) (2026-09-13)
+
+
+### Features
+
+* icon-only Mark Read/Delete buttons in SMS inbox ([ef5a05c](https://github.com/Banten-IT-Solutions/BITS-HiLink/commit/ef5a05c1df4c23dc7b2e8799689e33d245ea5b5f))
+
 ## [1.0.2](https://github.com/Banten-IT-Solutions/BITS-HiLink/compare/v1.0.1...v1.0.2) (2026-09-13)
 
 
