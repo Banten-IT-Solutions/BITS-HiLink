@@ -1,5 +1,5 @@
 {
-  "name": "luci-app-bishilink",
+  "name": "luci-app-bitshilink",
   "version": "1.0.0",
   "private": true,
   "description": "LuCI app for HiLink modem",

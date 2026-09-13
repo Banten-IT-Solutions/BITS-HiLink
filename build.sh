@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Pack luci-app-bishilink: .ipk (opkg) + .apk (apk) tanpa OpenWrt SDK.
+# Pack luci-app-bitshilink: .ipk (opkg) + .apk (apk) tanpa OpenWrt SDK.
 # .ipk = tar.gz luar (debian-binary + control.tar.gz + data.tar.gz)
 # .apk = apk-tools v3 `mkpkg` (butuh binary `apk` di PATH / env APK_BIN)
 # ponytail: shipped /usr/bin/hilink_api is ARM aarch64 static, `Architecture: all` salah
 # untuk x86/mipsel. Tambah build per-arch saat binary direcompile dari source.
 set -euo pipefail
 
-PKG_NAME=luci-app-bishilink
+PKG_NAME=luci-app-bitshilink
 PKG_VER=$(awk -F': ' '/^Version:/{print $2; exit}' control)
 PKG_DESC=$(awk -F': ' '/^Description:/{print $2; exit}' control)
 PKG_DEPENDS=$(awk -F': ' '/^Depends:/{print $2; exit}' control | tr ',' ' ')
@@ -17,7 +17,7 @@ OUT_APK="dist/${PKG_NAME}_${PKG_VER}_all.apk"
 rm -rf .build dist
 mkdir -p .build/root .build/control .build/outer dist
 
-cp -a luci-app-bishilink/root/. .build/root/
+cp -a luci-app-bitshilink/root/. .build/root/
 
 # ===== .ipk (opkg) =====
 cp control .build/control/control

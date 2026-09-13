@@ -54,19 +54,19 @@ BITS-HiLink/
 │   ├── dependabot.yml             # dep update (npm + actions)
 │   └── workflows/
 │       └── release.yml            # semantic-release + build .ipk/.apk + attach asset
-├── luci-app-bishilink/
+├── luci-app-bitshilink/
 │   └── root/
 │       ├── etc/
 │       │   ├── config/hilink
-│       │   └── uci-defaults/99-bishilink   # symlink /www/cgi-bin/hilink_api
+│       │   └── uci-defaults/99-bitshilink   # symlink /www/cgi-bin/hilink_api
 │       ├── usr/
 │       │   ├── bin/hilink_api              # precompiled CGI (static ARM aarch64)
 │       │   └── share/
-│       │       ├── luci/menu.d/luci-app-bishilink.json
-│       │       └── rpcd/acl.d/luci-app-bishilink.json
+│       │       ├── luci/menu.d/luci-app-bitshilink.json
+│       │       └── rpcd/acl.d/luci-app-bitshilink.json
 │       └── www/luci-static/resources/
 │           ├── icons/hilink-*.png
-│           └── view/bishilink/
+│           └── view/bitshilink/
 │               ├── details.js     # modem dashboard + signal metrics
 │               ├── message.js     # SMS inbox
 │               └── config.js      # ip/user/pass form
@@ -100,10 +100,10 @@ Grab package dari [Releases](https://github.com/Banten-IT-Solutions/BITS-HiLink/
 
 ```sh
 # OpenWrt 22.03–24.10 (opkg)
-opkg install luci-app-bishilink_<version>_all.ipk
+opkg install luci-app-bitshilink_<version>_all.ipk
 
 # OpenWrt 25.12+ (apk)
-apk add luci-app-bishilink_<version>_all.apk
+apk add luci-app-bitshilink_<version>_all.apk
 ```
 
 ### 3. Use
@@ -118,8 +118,8 @@ SDK-less `.ipk` + `.apk`. Butuh `apk-tools v3` (`apk mkpkg`) di `PATH`. Di CI su
 
 ```sh
 ./build.sh
-# output: dist/luci-app-bishilink_<version>_all.ipk
-#         dist/luci-app-bishilink_<version>_all.apk
+# output: dist/luci-app-bitshilink_<version>_all.ipk
+#         dist/luci-app-bitshilink_<version>_all.apk
 ```
 
 ---

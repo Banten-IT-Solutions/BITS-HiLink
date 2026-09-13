@@ -1,0 +1,11 @@
+{
+	"luci-app-bitshilink": {
+		"description": "Grant UCI access for luci-app-bitshilink",
+		"read": {
+			"uci": [ "hilink" ]
+		},
+		"write": {
+			"uci": [ "hilink" ]
+		}
+	}
+}

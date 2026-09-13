@@ -1,4 +1,4 @@
-Package: luci-app-bishilink
+Package: luci-app-bitshilink
 Version: 1.0.0
 Depends: libc, luci-base, rpcd
 Section: luci
